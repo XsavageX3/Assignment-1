@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: darkgreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px dotted black;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        label {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .hover-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .hover-button:hover {
+            background-color: #005f73;
+        }
+        </style>
+</head>
+<body>
+    <form action="submit" method="post">
+        <label for="Name">Enter Your Name:</label><br>
+        <input type="text" id="name" title="Enter Name"><br><br>
+        <label for="Email">Enter Your Mail Id:</label><br>
+        <input type="text" id="email" title="Enter Mail Id"><br><br>
+        <label for="password">Enter Your Password</label><br>
+        <input type="password" id="password" title="Enter Password:"><br><br>
+        <p>I have read the Terms and Conditions, and agree with them <input type="checkbox" id="checkbox" title="Click after reading"></p>
+        <button type="submit" class="hover-button">Submit</button>
+    </form>
+</body>
+</html>
